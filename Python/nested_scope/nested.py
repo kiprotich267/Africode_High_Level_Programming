@@ -10,7 +10,7 @@ def calculator(operation):
     def multiply(a, b):
         return a * b
     
-    def devide(a, b):
+    def divide(a, b):
         return a/b
     
     if operation =='add':
@@ -20,10 +20,20 @@ def calculator(operation):
     elif operation == 'multiply':
         return multiply
     elif operation == 'devide':
-        return devide
+        return divide
     else:
         return "invalid operation" 
     
-results_add = calculator("add")(2,3)
-print(f"Addition results:{results_add}")
+operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+
+
+calculation = calculator(operation)
+
+if calculation != "invalid operation":
+    result = calculation(a, b)
+    print(f"Result of {operation} is: {result}")
+else:
+    print(calculation)
     
