@@ -19,7 +19,7 @@ def calculator(operation):
         return subtract
     elif operation == 'multiply':
         return multiply
-    elif operation == 'divide':
+    elif operation == 'dide':
         return divide
     else:
         return "invalid operation" 

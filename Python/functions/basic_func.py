@@ -24,8 +24,8 @@
 
 
 #********************************************
-def cost(qty, price,  item):
-    print(f"{qty}kg {item} ksh.{price} Total kshs. {qty*price:.2f}")
+# def cost(qty, price,  item):
+#     print(f"{qty}kg {item} ksh.{price} Total kshs. {qty*price}")
 
-    print(cost(4,180,"sugar"))
+#     cost(4,180,"sugar")
 
